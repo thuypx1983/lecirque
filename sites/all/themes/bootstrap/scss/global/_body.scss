@@ -1,0 +1,11 @@
+.not-front {
+  .main-container{
+    .content-container{
+      @include box-style(#f7f6fb, #999);
+    }
+    .breadcrumb{
+      padding-left: 0px;
+    }
+  }
+
+}

@@ -1,0 +1,55 @@
+footer.footer{
+  background: $bg_1;
+  padding-bottom: 5px;
+  ul.menu{
+    padding-left: 0px;
+    li{
+      list-style-type:initial;
+      a{
+        color:$color_white;
+        padding:3px 0px 3px 0px;
+      }
+    }
+  }
+  .block-title{
+    color: $color_white;
+  }
+  .log-bct{
+    img{
+      margin-top: 5px;
+      max-width:150px
+    }
+  }
+  .company-infomation{
+    p{
+      color: $color_white;
+    }
+  }
+  .bottom{
+    border-top: 1px solid $color_white;
+    margin-top: 30px;
+    padding-top: 10px;
+    p{
+      color: $color_white;
+    }
+    a{
+      color: $color_white;
+    }
+  }
+  .social-profile-bottom{
+    padding-bottom: 15px;
+    a{
+      margin-right: 10px;
+    }
+  }
+  .menu{
+    li{
+      a{
+        &:hover{
+          background-color: transparent;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

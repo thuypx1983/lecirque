@@ -1,0 +1,12 @@
+.webform-client-form
+{
+  .webform-layout-box.horiz > * + *{
+    margin-left:0px;
+  }
+  .webform-component--row{
+    margin-bottom: 15px;
+  }
+}
+.block-webform{
+  margin-top: 20px;
+}
