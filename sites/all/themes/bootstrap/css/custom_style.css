@@ -16,62 +16,29 @@
 /* breakpoint with two conditions (min and max) */
 /*global*/
 .block-title {
-  color: #13673F;
+  color: #8a0108;
   font-size: 22px;
-  margin-bottom: 10px;
-  display: block; }
-  .block-title a {
-    color: #13673F; }
-
-.html a:hover {
-  color: #028002; }
+  margin-bottom: 20px;
+  display: block;
+  text-transform: uppercase;
+  position: relative; }
+  .block-title:first-letter {
+    color: #62c278; }
+  .block-title:after {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #a2a2a2;
+    content: ""; }
 
 .full-width-header {
   background-color: transparent; }
 
 .not-front .full-width-header .navbar {
   margin-bottom: 20px; }
-
-.full-width-header .navbar-default .navbar-nav > .active > a {
-  color: #ffffff; }
-
-.header-banner p {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-  .header-banner p span {
-    color: #1c6d43;
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase; }
-
-#block-block-8 {
-  position: relative; }
-  #block-block-8 p {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
-    #block-block-8 p span {
-      background: #13673f none repeat scroll 0 0;
-      color: #fff;
-      font-size: 18px;
-      padding: 10px 20px;
-      text-align: center;
-      width: 206px;
-      font-weight: bold; }
-
-.html .region-header-top {
-  background: transparent url("../images/banner_head.png") no-repeat scroll 100% 0/cover;
-  min-height: 120px;
-  position: relative; }
-  .html .region-header-top .logo img {
-    max-height: 120px; }
-.html .navbar.container {
-  margin-top: 0px; }
 
 .full-width-header .navbar {
   background-color: transparent;
@@ -80,16 +47,12 @@
   margin-bottom: 0px; }
   .full-width-header .navbar ul.navbar-nav li a {
     background-color: transparent;
-    color: #ffffff;
-    font-size: 16px; }
-    .full-width-header .navbar ul.navbar-nav li a .active {
+    color: #ffffff; }
+    .full-width-header .navbar ul.navbar-nav li a:active {
       background-color: transparent;
       color: #ffffff; }
-      .full-width-header .navbar ul.navbar-nav li a .active:hover {
-        color: #ffffff; }
     .full-width-header .navbar ul.navbar-nav li a:hover {
-      background-image: -moz-linear-gradient(center top, #028002, #028002);
-      text-decoration: underline; }
+      background-image: -moz-linear-gradient(center top, #281b4a, #392f8f); }
   .full-width-header .navbar ul.navbar-nav li ul li a {
     color: #000000; }
     .full-width-header .navbar ul.navbar-nav li ul li a:hover {
@@ -110,23 +73,14 @@
     height: 100%;
     left: 0;
     position: absolute;
-    width: 1px; }
-
-  .navbar {
-    position: absolute;
+    width: 1px; } }
+@media only screen and (min-width: 992px) {
+  .full-width-header #navbar {
     z-index: 9999;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, 0); } }
-@media only screen and (max-width: 767px) {
-  .header-banner p span {
-    font-size: 14px; }
-
-  #block-block-8 {
-    display: none; }
-
-  .html .region-header-top {
-    min-height: auto; } }
-.not-front .main-container .content-container {
+.not-front .main-container .col-sm-9 {
   background: #f7f6fb none repeat scroll 0 0;
   border-radius: 5px;
   box-shadow: 0 0 4px #999 inset;
@@ -134,8 +88,19 @@
 .not-front .main-container .breadcrumb {
   padding-left: 0px; }
 
+.space-15 {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.space-30 {
+  padding-top: 30px;
+  padding-bottom: 15px; }
+
+#block-block-10 {
+  padding-top: 50px; }
+
 footer.footer {
-  background: #13673F;
+  background: #03337d;
   padding-bottom: 5px; }
   footer.footer ul.menu {
     padding-left: 0px; }
@@ -163,9 +128,6 @@ footer.footer {
     padding-bottom: 15px; }
     footer.footer .social-profile-bottom a {
       margin-right: 10px; }
-  footer.footer .menu li a:hover {
-    background-color: transparent;
-    text-decoration: underline; }
 
 /*components*/
 .product-hot {
@@ -173,15 +135,13 @@ footer.footer {
   .product-hot .views-row {
     margin-bottom: 30px; }
     .product-hot .views-row .view-row-content {
-      display: inline-block;
-      width: 100%;
       background: #f7f6fb none repeat scroll 0 0;
       border-radius: 5px;
       box-shadow: 0 0 4px #999 inset;
       padding: 10px 15px;
       height: 100%; }
       .product-hot .views-row .view-row-content h2 {
-        color: #13673F;
+        color: #8a0108;
         font-size: 22px;
         margin-top: 10px;
         font-weight: bold; }
@@ -201,7 +161,7 @@ footer.footer {
         margin-left: 5px;
         color: #D9230F; }
       .product-hot .views-row .view-row-content .views-field-view-node {
-        margin-top: 10px; }
+        margin-top: 5px; }
         .product-hot .views-row .view-row-content .views-field-view-node a {
           -moz-user-select: none;
           background-image: none;
@@ -217,7 +177,7 @@ footer.footer {
           text-align: center;
           vertical-align: middle;
           white-space: nowrap;
-          background: #13673f none repeat scroll 0 0;
+          background: #03337d none repeat scroll 0 0;
           color: #fff; }
           .product-hot .views-row .view-row-content .views-field-view-node a:after {
             content: " >>"; }
@@ -229,7 +189,7 @@ footer.footer {
   box-shadow: 0 0 4px #999 inset;
   padding: 10px 15px; }
   .hot-news .views-field-title a h3 {
-    color: #13673F;
+    color: #03337d;
     font-size: 16px;
     font-weight: bold;
     margin: 5px 0px 5px 0px; }
@@ -248,20 +208,20 @@ footer.footer {
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
-    background: #13673f none repeat scroll 0 0;
+    background: #03337d none repeat scroll 0 0;
     color: #fff;
     margin: 30px 0px 10px 15px; }
     .hot-news .view-more-button:after {
       content: " >>"; }
 
 .news-relate .views-field-title a h3 {
-  color: #13673F;
+  color: #03337d;
   font-size: 16px;
   font-weight: bold;
   margin: 5px 0px 5px 0px; }
 
 .product-related .views-field-title a h2 {
-  color: #13673F;
+  color: #03337d;
   font-size: 16px;
   font-weight: bold;
   margin: 8px 0px 8px 0px; }
@@ -308,7 +268,7 @@ footer.footer {
     font-size: 20px;
     margin-bottom: 10px;
     margin-top: 0;
-    color: #13673F; }
+    color: #8a0108; }
   .product-list .views-row .views-field-view-node {
     margin-top: 5px; }
 

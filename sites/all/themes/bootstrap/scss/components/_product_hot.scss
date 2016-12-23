@@ -3,8 +3,6 @@
   .views-row{
     margin-bottom: 30px;
     .view-row-content{
-      display: inline-block;
-      width: 100%;
       @include box-style(#f7f6fb, #999);
       height: 100%;
       h2{
@@ -38,7 +36,7 @@
         }
       }
       .views-field-view-node{
-          margin-top: 10px;
+          margin-top: 5px;
           a{
             @include button-style();
             &:after{

@@ -1,6 +1,6 @@
 .not-front {
   .main-container{
-    .content-container{
+    .col-sm-9{
       @include box-style(#f7f6fb, #999);
     }
     .breadcrumb{
@@ -8,4 +8,15 @@
     }
   }
 
+}
+.space-15{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.space-30{
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+#block-block-10{
+  padding-top: 50px
 }

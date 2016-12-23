@@ -118,11 +118,13 @@
                 </div>
             <?php endif; ?>
         </div>
+
     </header>
     <?php print render($page['header']); ?>
 </div>
 
 <div class="main-container <?php print $container_class; ?>">
+
   <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>

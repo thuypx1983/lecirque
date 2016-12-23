@@ -42,14 +42,4 @@ footer.footer{
       margin-right: 10px;
     }
   }
-  .menu{
-    li{
-      a{
-        &:hover{
-          background-color: transparent;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
 }

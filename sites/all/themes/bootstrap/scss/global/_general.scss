@@ -1,14 +1,21 @@
 .block-title{
   color:$color_link;
   font-size:22px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: block;
-  a{
-    color:$color_link;
+  text-transform: uppercase;
+  position: relative;
+  &:first-letter{
+    color: $color_first_char;
   }
-}
-.html a{
-  &:hover{
-    color: #028002;
+  &:after{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    left: 0px;
+    bottom: 0px;
+    background-color: $color-gray;
+    content:"";
   }
 }
