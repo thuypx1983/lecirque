@@ -18,4 +18,24 @@
     background-color: $color-gray;
     content:"";
   }
+  span{
+    position: relative;
+    &:after{
+      color: $color_price;
+      font-size: 2.25rem;
+      font-family: "slick";
+      font-size: 25px;
+      line-height: 1;
+      content: '\2192';
+      right: -50px;
+      bottom: -2px;
+      position: absolute;
+    }
+  }
+}
+.font-4{
+  background-color: $bg_1;
+}
+.font-2{
+  background-color: $bg_1;
 }

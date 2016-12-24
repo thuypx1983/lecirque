@@ -155,19 +155,20 @@
     </div>
 </div>
 
+
 <footer class="footer">
     <div class="<?php print $container_class; ?>">
         <div class="row">
-            <div class="col-md-3 col-lg-3">
+            <div class="col-md-9 col-lg-9">
                 <?php print render($page['footer_col_1'])?>
             </div>
-             <div class="col-md-5 col-lg-5">
-                    <?php print render($page['footer_col_2'])?>
-                </div>
-             <div class="col-md-4 col-lg-4">
-                    <?php print render($page['footer_col_3'])?>
-                </div>
+            <div class="col-md-2 col-lg-2">
+                <?php print render($page['footer_col_2'])?>
             </div>
+            <div class="col-md-1 col-lg-1">
+                <?php print render($page['footer_col_3'])?>
+            </div>
+        </div>
 
     </div>
     <div class="bottom"><?php print render($page['footer_bottom']); ?></div>
