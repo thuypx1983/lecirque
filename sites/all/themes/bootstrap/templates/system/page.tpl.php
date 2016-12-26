@@ -75,7 +75,7 @@
 ?>
 <div id="header-top">
     <div class="container">
-           <?php print render($page['header_top']); ?>
+        <?php print render($page['header_top']); ?>
     </div>
 </div>
 <div class="full-width-header">
@@ -123,64 +123,28 @@
     <?php print render($page['header']); ?>
 </div>
 
-<div class="main-container <?php print $container_class; ?>">
-
-  <div class="row">
-
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
-
-    <section<?php print $content_column_class; ?>>
-      <div class="content-container">
-          <?php if (!empty($page['highlighted'])): ?>
-              <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-          <?php endif; ?>
-          <!--<?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>-->
-          <a id="main-content"></a>
-          <?php print render($title_prefix); ?>
-          <?php if (!empty($title)): ?>
-              <h1 class="page-header"><span><?php print $title; ?></span></h1>
-          <?php endif; ?>
-          <?php print render($title_suffix); ?>
-          <?php print $messages; ?>
-          <?php if (!empty($tabs)): ?>
-              <?php print render($tabs); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['help'])): ?>
-              <?php print render($page['help']); ?>
-          <?php endif; ?>
-          <?php if (!empty($action_links)): ?>
-              <ul class="action-links"><?php print render($action_links); ?></ul>
-          <?php endif; ?>
-          <?php print render($page['content']); ?>
-      </div>
-    </section>
-
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
-
-  </div>
+<div class="space-30 font-1 clearfix">
+    <div class="main-container <?php print $container_class; ?>">
+        <div class="row">
+            <?php print render($page['content']); ?>
+        </div>
+    </div>
 </div>
+
 
 <footer class="footer">
     <div class="<?php print $container_class; ?>">
         <div class="row">
-            <div class="col-md-3 col-lg-3">
+            <div class="col-md-9 col-lg-9">
                 <?php print render($page['footer_col_1'])?>
             </div>
-             <div class="col-md-5 col-lg-5">
-                    <?php print render($page['footer_col_2'])?>
-                </div>
-             <div class="col-md-4 col-lg-4">
-                    <?php print render($page['footer_col_3'])?>
-                </div>
+            <div class="col-md-2 col-lg-2">
+                <?php print render($page['footer_col_2'])?>
             </div>
+            <div class="col-md-1 col-lg-1">
+                <?php print render($page['footer_col_3'])?>
+            </div>
+        </div>
 
     </div>
     <div class="bottom"><?php print render($page['footer_bottom']); ?></div>
