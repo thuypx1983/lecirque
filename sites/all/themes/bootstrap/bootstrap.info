@@ -3,6 +3,7 @@ description = Built to use Bootstrap, a sleek, intuitive, and powerful front-end
 core = 7.x
 
 stylesheets[all][] = css/custom_style.css
+stylesheets[all][] = css/oms.css
 
 scripts[]=js/jquery.matchHeight.js
 scripts[]=js/script.js

@@ -1,0 +1,25 @@
+#block-views-videos-block{
+  /* the slides */
+  .slick-slide {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  /* the parent */
+  .slick-list {
+    margin-left:-27px;
+  }
+
+  .views-field-title{
+    text-align: center;
+    padding-top: 10px;
+    a{
+      color: $color_price;
+      font-weight: bold;
+    }
+  }
+
+  .slick-arrow{
+    height: 100%;
+  }
+}
